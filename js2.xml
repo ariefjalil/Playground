@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE note SYSTEM "note.dtd">
 <note>
-<TO>Tove</T0>
-<from>Jani</from>
+<TO>Arief</T0>
+<from>SLACK_URL</from>
 <heading>Reminder</heading>
-<body>Don't forget me this weekend!</body>
+<body></body>
 </note>
 
+<!-- added comment -->
