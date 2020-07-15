@@ -4,9 +4,9 @@ from requests_oauthlib import OAuth1
 ConsumerKey    = 'OwnAccount'
 ConsumerSecret = 'OwnAccount'
 
-TokenKey       = '8NUYNv+QMcj9X@8zEKpc76bbDutWW5'
-TokenSecret    = 'Kdv39udqUMZxpY+qQ-GtD-ZRuVAtFfXRvEg2t@kx'
-tenant         = 'cb65aa12-9edb-428b-a251-c40f62c3c9e7'
+TokenKey       = 'M3DaC7JPZrkDznNJ-QXPaBS83mYAMd'
+TokenSecret    = '7QGQMufSUfR922rNQ5rdByxT336TWK58Gwd2t5nC'
+tenant         = 'ed1fc1c5-a1de-4092-9112-b35d5763f0a0'
 
 headers        = {'Accept' : 'application/json',
 				'X-Tradeshift-TenantId' : tenant,
@@ -37,23 +37,23 @@ def deleteAll():
 	count = 0
 	pageLimit = 0
 	currentPage = 0
-	url = 'https://api-sandbox.tradeshift.com/tradeshift/rest/external/documentfiles?directory=processing&limit=100&page='+str(pageLimit)
-	for i in re.findall(r'"numPages" : (.*?),', get('https://api.tradeshift.com/tradeshift/rest/external/documentfiles?directory=processing&limit=100&page=0')):
+	url = 'https://api-sandbox.tradeshift.com/tradeshift/rest/external/documentfiles?directory=failed/Last500Files&limit=100&page='+str(pageLimit)
+	for i in re.findall(r'"numPages" : (.*?),', get('https://api.tradeshift.com/tradeshift/rest/external/documentfiles?directory=failed/Last500Files&limit=100&page=0')):
 		pageLimit = int(i)-1
 	while currentPage <= pageLimit:
-		url = 'https://api-sandbox.tradeshift.com/tradeshift/rest/external/documentfiles?directory=processing&limit=100&page='+str(currentPage)
+		url = 'https://api-sandbox.tradeshift.com/tradeshift/rest/external/documentfiles?directory=failed/Last500Files&limit=100&page='+str(currentPage)
 		stuck += str(get(url))
 		currentPage +=1
 	howMany = len(re.findall(r'"FileName" : "(.*?)",', stuck))
 	for i in re.findall(r'"FileName" : "(.*?)",', stuck):
-		url = 'https://api-sandbox.tradeshift.com/tradeshift/rest/external/documentfiles/'+str(i)+'/file?directory=processing'
+		url = 'https://api.tradeshift.com/tradeshift/rest/external/documentfiles/'+str(i)+'/file?directory=failed/Last500Files'
 		count +=1
 		if delete(url) == 204:
 			print str(count)+'/'+str(howMany), i
 		else:
 			print i, 'deleting failed'
 def deleteOne(fileName):
-	url = 'https://api-sandbox.tradeshift.com/tradeshift/rest/external/documentfiles/'+str(fileName)+'/file?directory=processing'
+	url = 'https://api-sandbox.tradeshift.com/tradeshift/rest/external/documentfiles/'+str(fileName)+'/file?directory=failed/Last500Files'
 	if delete(url) == 204:
 		print 'Deleting', fileName, 'was successful.'
 	else:
