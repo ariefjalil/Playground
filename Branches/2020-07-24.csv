@@ -1,0 +1,51 @@
+33c3200f-20a8-4a06-b7a8-6c963303cedd;namita.gera+29AAACW0387R2ZI@wipro.com;Wipro Limited KARTANAKA;IN;;1896e2be-630a-46aa-8a1c-9af5d9e925e8;ac1b4335-b7f5-4f1a-8a98-0b0350b41364;400;1;{
+  "ErrorCode" : "InvalidInput",
+  "Message" : "[TenantIdentifierUsed: [ErrorDetail [key=identifier, value=IN:PAN/AAACW0387R], ErrorDetail [key=id, value=1896e2be-630a-46aa-8a1c-9af5d9e925e8]]]",
+  "ErrorDetail" : [ ],
+  "ValidationError" : [ {
+    "ErrorCode" : "TenantIdentifierUsed",
+    "ErrorDetail" : [ {
+      "Key" : "identifier",
+      "Value" : "IN:PAN/AAACW0387R"
+    }, {
+      "Key" : "id",
+      "Value" : "1896e2be-630a-46aa-8a1c-9af5d9e925e8"
+    } ]
+  } ],
+  "RequestId" : "92ef6c53-8b17-447c-ab92-6f01cfd47fb6"
+}
+33c3200f-20a8-4a06-b7a8-6c963303cedd;namita.gera+27AAACW0387R1ZN@wipro.com;Wipro Limited MAHARASHTRA;IN;;ea51f995-15dd-4811-a5ff-ae2a44462dc0;d20b2a52-6c88-4407-a8d7-aaf81e1ce628;400;2;{
+  "ErrorCode" : "InvalidInput",
+  "Message" : "[TenantIdentifierUsed: [ErrorDetail [key=identifier, value=IN:PAN/AAACW0387R], ErrorDetail [key=id, value=ea51f995-15dd-4811-a5ff-ae2a44462dc0]]]",
+  "ErrorDetail" : [ ],
+  "ValidationError" : [ {
+    "ErrorCode" : "TenantIdentifierUsed",
+    "ErrorDetail" : [ {
+      "Key" : "identifier",
+      "Value" : "IN:PAN/AAACW0387R"
+    }, {
+      "Key" : "id",
+      "Value" : "ea51f995-15dd-4811-a5ff-ae2a44462dc0"
+    } ]
+  } ],
+  "RequestId" : "fb0e8f90-ae38-40f4-895f-adf73dbb19a8"
+}
+33c3200f-20a8-4a06-b7a8-6c963303cedd;namita.gera+36AAACW0387R1ZO@wipro.com;Wipro Limited TELANGANA;IN;;a41886d5-fbed-4aac-a90f-ac0cb35c0642;9f2ef68c-f4b5-4ce8-9e19-4b38f4737c24;400;3;{
+  "ErrorCode" : "InvalidInput",
+  "Message" : "[TenantIdentifierUsed: [ErrorDetail [key=identifier, value=IN:PAN/AAACW0387R], ErrorDetail [key=id, value=a41886d5-fbed-4aac-a90f-ac0cb35c0642]]]",
+  "ErrorDetail" : [ ],
+  "ValidationError" : [ {
+    "ErrorCode" : "TenantIdentifierUsed",
+    "ErrorDetail" : [ {
+      "Key" : "identifier",
+      "Value" : "IN:PAN/AAACW0387R"
+    }, {
+      "Key" : "id",
+      "Value" : "a41886d5-fbed-4aac-a90f-ac0cb35c0642"
+    } ]
+  } ],
+  "RequestId" : "8c3d0c3f-47a6-4e58-b13a-03971326e32e"
+}
+33c3200f-20a8-4a06-b7a8-6c963303cedd;namita.gera+29AAACW0387R2ZI@wipro.com;Wipro Limited KARTANAKA;IN;;70d3157b-609b-49d5-976c-de42bbf0f4f2;9858004a-a2a1-4f9f-b218-80c5188f5452;204;1;;AutoAcceptConnections set to True
+33c3200f-20a8-4a06-b7a8-6c963303cedd;namita.gera+27AAACW0387R1ZN@wipro.com;Wipro Limited MAHARASHTRA;IN;;eb23e1ad-738e-4d4d-9406-58b8c9afdfc7;cb2c9e1e-e070-40bd-aa2b-be66904d7a12;204;2;;AutoAcceptConnections set to True
+33c3200f-20a8-4a06-b7a8-6c963303cedd;namita.gera+36AAACW0387R1ZO@wipro.com;Wipro Limited TELANGANA;IN;;0e9ed499-5948-4e10-aa8b-abc0ecabfd29;98da5894-7522-4ddc-896e-12a8e66624b8;204;3;;AutoAcceptConnections set to True
